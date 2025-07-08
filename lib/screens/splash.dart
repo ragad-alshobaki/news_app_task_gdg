@@ -30,6 +30,28 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.primaryColor,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'News',
+              style: TextStyle(
+                color: AppColor.redColor,
+                fontSize: 50,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Stay informed, stay ahead',
+              style: TextStyle(
+                color: AppColor.greyColor
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
